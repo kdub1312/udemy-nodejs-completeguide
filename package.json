@@ -1,0 +1,24 @@
+{
+  "name": "udemy-nodejs-completeguide",
+  "version": "1.0.0",
+  "description": "Based on Udemy NodeJS Complete Guide Course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdub1312/udemy-nodejs-completeguide.git"
+  },
+  "author": "Kevin Wagner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kdub1312/udemy-nodejs-completeguide/issues"
+  },
+  "homepage": "https://github.com/kdub1312/udemy-nodejs-completeguide#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
