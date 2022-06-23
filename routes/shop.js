@@ -1,12 +1,9 @@
 const path = require('path');
 const express = require('express');
 
-const router = express.Router();
+const rootDir = require('../util/path');
 
-// router.use('/', (req, res, next) => {
-//     console.log('this will always run!');
-//     next();
-// })
+const router = express.Router();
 
 router.get('/users', (req, res, next) => {
     console.log('/users middleware');
@@ -14,7 +11,7 @@ router.get('/users', (req, res, next) => {
 })
 
 router.get('/', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '../', 'views', 'shop.html'));
+    res.sendFile(path.join(rootDir, 'views', 'shop.html'));
 })
 
 module.exports = router;
