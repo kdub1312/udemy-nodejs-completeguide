@@ -1,4 +1,4 @@
-const { src, dest } = require("gulp");
+const { src, dest, watch } = require("gulp");
 const sass = require('gulp-sass')(require('node-sass'));
 
 function generateCSS(cb) {
@@ -8,4 +8,9 @@ function generateCSS(cb) {
     cb();
 }
 
+function watchFiles(cb) {
+    watch('sass/**.scss', generateCSS);
+}
+
 exports.css = generateCSS;
+exports.watch = watchFiles;
